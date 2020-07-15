@@ -1,0 +1,38 @@
+<h1>Editar Anúncio</h1>
+
+<div class="container">
+  
+  <div class="form-group">
+    
+    <label>Marca</label>
+    <input type="text" class="form-control" [ngModel]="anuncio?.marca" placeholder="Digite a marca">
+  </div>
+
+  <div class="form-group">
+    <label>Modelo</label>
+    <input type="text" class="form-control" [ngModel]="anuncio?.modelo" (ngModelChange)="anuncio.modelo=$event" placeholder="Digite o modelo">
+  </div>
+
+  <div class="form-group">
+    <label>Versão</label>
+    <input type="text" class="form-control" [ngModel]="anuncio?.versao" (ngModelChange)="anuncio.versao = $event"  placeholder="Digite a versão">
+  </div>
+
+  <div class="form-group">
+    <label>Ano</label>
+    <input type="text" class="form-control" [ngModel]="anuncio?.ano" (ngModelChange)="anuncio.ano = $event"  placeholder="Digite o ano">
+  </div>
+
+  <div class="form-group">
+    <label>Quilometragem</label>
+    <input type="text" class="form-control" [ngModel]="anuncio?.quilometragem" (ngModelChange)="anuncio.quilometragem = $event"  placeholder="Digite a quilometragem">
+  </div>
+
+  <div class="form-group">
+    <label>Observação</label>
+    <textarea class="form-control" [ngModel]="anuncio?.observacao" (ngModelChange)="anuncio.observacao = $event"></textarea>
+  </div>
+
+  <button class="btn btn-primary" (click)="salvar(anuncio)">Salvar</button>
+
+</div>

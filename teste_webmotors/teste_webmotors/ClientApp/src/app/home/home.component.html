@@ -1,0 +1,37 @@
+<h1>Cadastro</h1>
+
+<div class="container">
+
+  <div class="form-group">
+    <label>Marca</label>
+    <input type="text" class="form-control" [(ngModel)]="marca" placeholder="Digite a marca">
+  </div>
+
+  <div class="form-group">
+    <label>Modelo</label>
+    <input type="text" class="form-control" [(ngModel)]="modelo" placeholder="Digite o modelo">
+  </div>
+
+  <div class="form-group">
+    <label>Versão</label>
+    <input type="email" class="form-control" [(ngModel)]="versao" placeholder="Digite a versão">
+  </div>
+
+  <div class="form-group">
+    <label>Ano</label>
+    <input type="text" class="form-control" [(ngModel)]="ano" placeholder="Digite o ano">
+  </div>
+
+  <div class="form-group">
+    <label>Quilometragem</label>
+    <input type="text" class="form-control" [(ngModel)]="quilometragem" placeholder="Digite a quilometragem">
+  </div>
+
+  <div class="form-group">
+    <label>Observação</label>
+    <textarea class="form-control" [(ngModel)]="observacao"></textarea>
+  </div>
+
+  <button class="btn btn-primary" (click)="salvar()">Salvar</button>
+
+</div>
